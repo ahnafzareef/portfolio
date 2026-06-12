@@ -1,3 +1,7 @@
+"use client"
+
+import { useEffect, useState } from "react"
+
 const LINKS = [
   { label: "work", href: "#work" },
   { label: "experience", href: "#experience" },
@@ -5,6 +9,26 @@ const LINKS = [
 ]
 
 export function Nav() {
+  const [time, setTime] = useState("")
+
+  useEffect(() => {
+    const tick = () => {
+      const parts = new Intl.DateTimeFormat("en-CA", {
+        timeZone: "America/Toronto",
+        hour12: false,
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      }).formatToParts(new Date())
+      const get = (t: string) => parts.find((p) => p.type === t)?.value ?? "00"
+      setTime(`${get("hour")}:${get("minute")}:${get("second")} tor`)
+    }
+
+    tick()
+    const id = setInterval(tick, 1000)
+    return () => clearInterval(id)
+  }, [])
+
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <div className="relative mx-auto flex h-14 max-w-[1400px] items-center px-4 md:px-6">
@@ -26,6 +50,13 @@ export function Nav() {
           ))}
         </nav>
 
+        <div className="ml-auto flex shrink-0 items-center gap-3 text-[10px] tracking-wider text-muted-foreground">
+          <span className="hidden items-center gap-1.5 md:inline-flex">
+            <span className="h-1.5 w-1.5 bg-accent blink" />
+            available
+          </span>
+          <span className="tabular-nums">{time || "--:--:-- tor"}</span>
+        </div>
       </div>
     </header>
   )
