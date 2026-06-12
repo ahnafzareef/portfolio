@@ -1,6 +1,6 @@
 export function Contact() {
   return (
-    <section id="contact" className="relative overflow-hidden border-b border-border">
+    <section id="contact" className="relative overflow-hidden border-b border-dotted border-border">
       <div aria-hidden className="pointer-events-none absolute inset-0 dot-grid opacity-40" />
       <div className="relative mx-auto max-w-[1400px] px-4 py-12 md:px-6 md:py-16">
         <p className="mb-4 flex items-center gap-2 text-xs font-medium lowercase tracking-[0.18em] text-foreground/70">

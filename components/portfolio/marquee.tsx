@@ -1,10 +1,35 @@
 const ITEMS = [
-  "firmware",
-  "circuit design",
-  "pcb",
-  "fpga",
-  "microcontrollers",
-  "communication protocols",
+  // languages
+  "C",
+  "C++",
+  "Verilog",
+  "Python",
+  "Bash",
+  // protocols
+  "I2C",
+  "SPI",
+  "UART",
+  "I2S",
+  "CAN",
+  "USB",
+  "Ethernet",
+  // tools
+  "Keil",
+  "Quartus",
+  "Icarus Verilog",
+  "Yosys/nextpnr",
+  "Altium",
+  "ESP-IDF",
+  "OrCAD",
+  "MATLAB",
+  "Logic Analyzer",
+  // platforms
+  "ARM Cortex-M",
+  "ESP32",
+  "Tang Nano 9K FPGA",
+  "DE10-Lite",
+  "FreeRTOS",
+  "Linux",
 ]
 
 export function Marquee() {

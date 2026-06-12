@@ -17,7 +17,7 @@ const doto = Doto({
 })
 
 export const metadata: Metadata = {
-  title: "AZ/ — Ahnaf Zareef · Computer Engineering",
+  title: "ahnaf zareef",
   description:
     "Ahnaf Zareef — Computer Engineering student at McMaster University, based in Toronto, Ontario. Selected projects, experiments, and systems built with care.",
   generator: "v0.app",

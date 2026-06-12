@@ -4,7 +4,6 @@ import { Marquee } from "@/components/portfolio/marquee"
 import { Experience } from "@/components/portfolio/experience"
 import { Works } from "@/components/portfolio/works"
 import { Contact } from "@/components/portfolio/contact"
-
 export default function Page() {
   return (
     <main className="min-h-screen bg-background text-foreground">
