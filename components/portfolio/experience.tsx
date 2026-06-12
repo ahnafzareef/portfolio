@@ -70,7 +70,7 @@ const EXPERIENCES: Experience[] = [
     company: "Platinum Medical",
     role: "Software Developer/IT Intern",
     period: "june - august 2023",
-    type: "internship",
+    type: "Toronto, ON",
     summary:
       "Rebuilt the patient website and e-referral system, lifting bookings 30% and cutting per-patient admin time.",
     used: ["HTML", "CSS", "JavaScript", "Node.js", "MySQL", "Fetch API"],
