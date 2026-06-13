@@ -8,6 +8,8 @@ type Project = {
   img: string
   /** Override the default cover/zoom framing (base scale + hover scale). */
   imgClassName?: string
+  /** Text for the call-to-action link. Defaults to "GitHub". */
+  linkLabel?: string
 }
 
 // Default framing: slight zoom-in on hover, grayscale until hover.
@@ -51,6 +53,80 @@ const PROJECTS: Project[] = [
     href: "https://github.com/ahnafzareef/IV-Curve-Tracer",
     img: "/projects/iv-curve-tracer.jpg",
     imgClassName: "object-contain object-center p-2 group-hover:scale-[1.04]",
+  },
+  {
+    title: "Delvie",
+    description:
+      "A spatial scanner running C firmware that drives a half-stepped motor and a VL53L1X ToF sensor over I2C, sampling 128 points per 360° sweep with per-step settling. Interrupt-driven start/stop control and range validation stream polar data over UART to MATLAB for 3D point-cloud reconstruction.",
+    tags: [
+      "C",
+      "MSP432",
+      "Keil",
+      "VL53L1X ToF",
+      "I2C",
+      "UART",
+      "MATLAB",
+      "Logic Analyzer",
+    ],
+    href: "https://github.com/ahnafzareef/Lidar_Sensor",
+    img: "/projects/delvie.jpg",
+  },
+  {
+    title: "piBlocker",
+    description:
+      "A network-level DNS ad blocker running on a Raspberry Pi 3B. Listens for DNS queries, checks each domain against a custom blocklist, and returns a sinkhole response for matches while forwarding everything else upstream — killing ads across every device on the network.",
+    tags: ["Python", "Raspberry Pi", "DNS", "Networking", "Linux"],
+    href: "https://github.com/ahnafzareef/piBlocker",
+    img: "/projects/piblocker.svg",
+    imgClassName: "object-cover object-center group-hover:scale-[1.04]",
+  },
+  {
+    title: "International Airport Challenge",
+    description:
+      "An automated passenger check-in and baggage transfer system for a modeled airport. A hinged-ramp mechanism driven by a linear actuator moves luggage from conveyor to plane, with Python handling passenger and luggage verification — designed in Inventor and 3D printed as a team.",
+    tags: [
+      "Autodesk Inventor",
+      "Python",
+      "3D Printing",
+      "Linear Actuator",
+      "CAD",
+    ],
+    href: "https://beautiful-node-cb6.notion.site/Project-1-International-Airport-Challenge-16e2e8cb8891803c9e14d980c60fd436",
+    img: "/projects/airport.jpg",
+    imgClassName: "object-cover object-center group-hover:scale-[1.04]",
+    linkLabel: "Notion",
+  },
+  {
+    title: "Microplastic Filtration",
+    description:
+      "A material-selection study to design a wastewater filtration component that captures 10–20µm microplastics. Used Ansys Granta EduPack, Ashby chart analysis, and a decision matrix — backed by porosity calculations and an eco-audit/LCA — to land on polypropylene as the optimal material.",
+    tags: [
+      "Granta EduPack",
+      "Ashby Charts",
+      "Eco-Audit",
+      "Materials",
+      "Excel",
+    ],
+    href: "https://beautiful-node-cb6.notion.site/Project-2-Microplastic-Filtration-1ce2e8cb8891801ebcebd13e87d84468",
+    img: "/projects/microplastic.jpg",
+    imgClassName: "object-cover object-center group-hover:scale-[1.04]",
+    linkLabel: "Notion",
+  },
+  {
+    title: "XY Slice and Dice",
+    description:
+      "An accessible kitchen cutting tool designed for a client with Usher's Syndrome. A guided blade travels in a fixed vertical plane with a gravity-controlled guard for safe slicing, on a non-slip base with high-contrast colors for visibility — modelled in Autodesk Inventor and 3D printed.",
+    tags: [
+      "Autodesk Inventor",
+      "3D Printing",
+      "CAD",
+      "Accessibility",
+      "Engineering Drawings",
+    ],
+    href: "https://www.notion.so/Project-3-XY-Slice-and-Dice-1ce2e8cb88918024aedbe8789bd36109",
+    img: "/projects/xy-slice.jpg",
+    imgClassName: "object-cover object-center group-hover:scale-[1.04]",
+    linkLabel: "Notion",
   },
 ]
 
@@ -107,7 +183,7 @@ export function Works() {
                 </ul>
 
                 <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold lowercase tracking-wide text-accent transition-colors group-hover:text-foreground">
-                  GitHub &#8594;
+                  {p.linkLabel ?? "GitHub"} &#8594;
                 </span>
               </div>
             </a>

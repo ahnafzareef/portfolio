@@ -1,0 +1,41 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="800" height="500" fill="#141414"/>
+
+  <!-- terminal window -->
+  <rect x="80" y="70" width="640" height="360" rx="10" fill="#1c1c1c" stroke="#2e2e2e" stroke-width="1.5"/>
+
+  <!-- title bar -->
+  <rect x="80" y="70" width="640" height="44" rx="10" fill="#161616"/>
+  <rect x="80" y="100" width="640" height="14" fill="#161616"/>
+  <line x1="80" y1="114" x2="720" y2="114" stroke="#2e2e2e" stroke-width="1.5"/>
+  <circle cx="106" cy="92" r="6" fill="#e23b3b"/>
+  <circle cx="128" cy="92" r="6" fill="#3a3a3a"/>
+  <circle cx="150" cy="92" r="6" fill="#3a3a3a"/>
+  <text x="400" y="96" fill="#6a6a6a" font-size="14" text-anchor="middle" letter-spacing="1">piblocker.py — raspberry pi 3b</text>
+
+  <!-- terminal body -->
+  <text x="110" y="160" font-size="17">
+    <tspan fill="#e23b3b">$</tspan><tspan fill="#fafafa"> sudo python3 piblocker.py</tspan>
+  </text>
+  <text x="110" y="190" fill="#6a6a6a" font-size="15">listening on 53/udp · upstream 1.1.1.1</text>
+
+  <text x="110" y="232" font-size="16">
+    <tspan fill="#e23b3b">blocked  </tspan><tspan fill="#cfcfcf">ads.doubleclick.net</tspan>
+  </text>
+  <text x="110" y="262" font-size="16">
+    <tspan fill="#e23b3b">blocked  </tspan><tspan fill="#cfcfcf">googlesyndication.com</tspan>
+  </text>
+  <text x="110" y="292" font-size="16">
+    <tspan fill="#e23b3b">blocked  </tspan><tspan fill="#cfcfcf">analytics.tiktok.com</tspan>
+  </text>
+  <text x="110" y="322" font-size="16">
+    <tspan fill="#4a8f5a">forward  </tspan><tspan fill="#cfcfcf">github.com  -&gt;  1.1.1.1</tspan>
+  </text>
+  <text x="110" y="352" font-size="16">
+    <tspan fill="#4a8f5a">forward  </tspan><tspan fill="#cfcfcf">wikipedia.org  -&gt;  1.1.1.1</tspan>
+  </text>
+
+  <!-- cursor -->
+  <text x="110" y="392" font-size="16" fill="#e23b3b">$</text>
+  <rect x="128" y="379" width="10" height="17" fill="#fafafa"/>
+</svg>
