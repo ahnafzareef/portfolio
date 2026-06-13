@@ -95,9 +95,9 @@ export function Experience() {
           {EXPERIENCES.map((exp) => (
             <div
               key={exp.company + exp.role}
-              className="flex items-start justify-between gap-6 py-5"
+              className="flex flex-col gap-3 py-5 md:flex-row md:items-start md:justify-between md:gap-6"
             >
-              <div>
+              <div className="order-2 md:order-1">
                 <h3 className="font-dot text-xl lowercase leading-none tracking-tight md:text-2xl">
                   {exp.role}
                 </h3>
@@ -129,7 +129,7 @@ export function Experience() {
                   ))}
                 </ul>
               </div>
-              <div className="shrink-0 text-right">
+              <div className="order-1 shrink-0 text-left md:order-2 md:text-right">
                 <span className="font-dot text-sm lowercase text-muted-foreground">
                   {exp.period}
                 </span>
