@@ -55,7 +55,15 @@ export function Nav() {
             <span className="h-1.5 w-1.5 bg-accent blink" />
             available
           </span>
-          <span className="tabular-nums">{time || "--:--:-- tor"}</span>
+          <span className="hidden tabular-nums md:inline">{time || "--:--:-- tor"}</span>
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1 rounded-md border border-accent/50 bg-accent/10 px-2.5 py-1 font-medium lowercase tracking-wider text-accent transition-colors hover:bg-accent hover:text-accent-foreground"
+          >
+            resume &#8599;
+          </a>
         </div>
       </div>
     </header>

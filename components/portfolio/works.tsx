@@ -20,7 +20,7 @@ const PROJECTS: Project[] = [
   {
     title: "XNOR-9",
     description:
-      "A Binarized Neural Network accelerator on a Tang Nano 9K FPGA, replacing multiply-accumulate with XNOR-popcount for 32× model compression. Hit 95% accuracy within the 8,640-LUT budget, with an ESP32-S3 front-end streaming hand-drawn digits to the FPGA over UART.",
+      "Binarized Neural Network accelerator on a Tang Nano 9K FPGA.",
     tags: [
       "FPGA",
       "Verilog",
@@ -38,7 +38,7 @@ const PROJECTS: Project[] = [
   {
     title: "IV Curve Tracer",
     description:
-      "A custom Altium PCB that characterizes per-cell solar efficiency and detects faults, using a Darlington pair for high-gain current amplification and a Hall-effect sensor. ESP32 firmware drives a DAC-based IV sweep with 16-sample ADC averaging, plus MOSFET/Zener protection on the cell output and ADC.",
+      "Custom Altium PCB for per-cell solar IV characterization.",
     tags: [
       "Altium",
       "PCB",
@@ -57,7 +57,7 @@ const PROJECTS: Project[] = [
   {
     title: "Delvie",
     description:
-      "A spatial scanner running C firmware that drives a half-stepped motor and a VL53L1X ToF sensor over I2C, sampling 128 points per 360° sweep with per-step settling. Interrupt-driven start/stop control and range validation stream polar data over UART to MATLAB for 3D point-cloud reconstruction.",
+      "360° ToF lidar scanner with MATLAB point-cloud reconstruction.",
     tags: [
       "C",
       "MSP432",
@@ -74,7 +74,7 @@ const PROJECTS: Project[] = [
   {
     title: "piBlocker",
     description:
-      "A network-level DNS ad blocker running on a Raspberry Pi 3B. Listens for DNS queries, checks each domain against a custom blocklist, and returns a sinkhole response for matches while forwarding everything else upstream — killing ads across every device on the network.",
+      "Network-level DNS ad blocker running on a Raspberry Pi 3B.",
     tags: ["Python", "Raspberry Pi", "DNS", "Networking", "Linux"],
     href: "https://github.com/ahnafzareef/piBlocker",
     img: "/projects/piblocker.svg",
@@ -83,7 +83,7 @@ const PROJECTS: Project[] = [
   {
     title: "International Airport Challenge",
     description:
-      "An automated passenger check-in and baggage transfer system for a modeled airport. A hinged-ramp mechanism driven by a linear actuator moves luggage from conveyor to plane, with Python handling passenger and luggage verification — designed in Inventor and 3D printed as a team.",
+      "Automated baggage transfer mechanism with Python verification.",
     tags: [
       "Autodesk Inventor",
       "Python",
@@ -99,7 +99,7 @@ const PROJECTS: Project[] = [
   {
     title: "Microplastic Filtration",
     description:
-      "A material-selection study to design a wastewater filtration component that captures 10–20µm microplastics. Used Ansys Granta EduPack, Ashby chart analysis, and a decision matrix — backed by porosity calculations and an eco-audit/LCA — to land on polypropylene as the optimal material.",
+      "Material-selection study for a 10–20µm microplastic filter.",
     tags: [
       "Granta EduPack",
       "Ashby Charts",
@@ -115,7 +115,7 @@ const PROJECTS: Project[] = [
   {
     title: "XY Slice and Dice",
     description:
-      "An accessible kitchen cutting tool designed for a client with Usher's Syndrome. A guided blade travels in a fixed vertical plane with a gravity-controlled guard for safe slicing, on a non-slip base with high-contrast colors for visibility — modelled in Autodesk Inventor and 3D printed.",
+      "Accessible guided-blade cutting tool for safe food prep.",
     tags: [
       "Autodesk Inventor",
       "3D Printing",
