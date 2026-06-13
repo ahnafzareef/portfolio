@@ -14,3 +14,9 @@ next.user-config.*
 node_modules
 .next/
 .DS_Store
+
+# Local scratch / asset-generation (not part of the site)
+_build-*.js
+_fonts_tmp/
+/branding/
+/public/qr.png
