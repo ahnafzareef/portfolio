@@ -41,8 +41,8 @@ const PROJECTS: Project[] = [
       "Verilog I2C master with a 4-phase bit-timing scheme, deployed on a MicroBlaze SoC.",
     tags: ["FPGA", "Verilog", "Vivado", "MicroBlaze", "C", "Arty S7-25"],
     href: "https://github.com/ahnafzareef/i2c_master_controller",
-    img: "/projects/i2c-master.svg",
-    imgClassName: "object-cover object-center group-hover:scale-[1.04]",
+    img: "/projects/i2c-master.png",
+    imgClassName: "object-contain object-center p-2 group-hover:scale-[1.04]",
   },
   {
     title: "IV Curve Tracer",
