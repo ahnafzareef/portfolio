@@ -53,7 +53,6 @@ const PROJECTS: Project[] = [
       "PCB",
       "ESP32",
       "C",
-      "Darlington",
       "Hall effect",
       "MOSFET",
       "Zener",
