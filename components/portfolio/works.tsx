@@ -18,6 +18,24 @@ const DEFAULT_IMG_CLASS =
 
 const PROJECTS: Project[] = [
   {
+    title: "LCD FPGA Driver",
+    description:
+      "ILI9341 LCD driver for Xilinx Systems with XPT2046 support on a MicroBlaze softcore.",
+    tags: [
+      "FPGA",
+      "Verilog",
+      "C",
+      "ARTY S7-25",
+      "UART",
+      "Vivado",
+      "Vitis",
+      "MicroBlaze",
+    ],
+    href: "https://github.com/ahnafzareef/ILI9341Driver",
+    img: "/projects/ili9341demoimage.jpg",
+    imgClassName: "object-cover object-center group-hover:scale-[1.04]",
+  },
+  {
     title: "XNOR-9",
     description:
       "Binarized Neural Network accelerator on a Tang Nano 9K FPGA.",
