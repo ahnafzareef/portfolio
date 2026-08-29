@@ -16,7 +16,7 @@ const EXPERIENCES: Experience[] = [
     period: "feb 2026 - present",
     type: "Toronto, ON",
     summary:
-      "Built an offline robotics dev-kit that trains and deploys ML models on the ESP32-S3, with UVC + CDC firmware (TinyUSB/ESP-IDF) and a Blockly NN builder in TensorFlow.js.",
+      "Built firmware and host tooling for on-device image classification on an ESP32-S3, running inference fully offline.",
     used: [
       "ESP32-S3",
       "ESP-IDF",
