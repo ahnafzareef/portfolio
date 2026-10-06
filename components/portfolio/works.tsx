@@ -51,7 +51,7 @@ const PROJECTS: Project[] = [
       "TensorFlow",
     ],
     href: "https://github.com/ahnafzareef/Hardware-Accelerator",
-    img: "hwaccel.jpg",
+    img: "/projects/hwaccel.png",
   },
   {
     title: "I2C Master Controller",
