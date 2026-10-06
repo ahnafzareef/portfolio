@@ -18,24 +18,6 @@ const DEFAULT_IMG_CLASS =
 
 const PROJECTS: Project[] = [
   {
-    title: "LCD FPGA Driver",
-    description:
-      "ILI9341 LCD driver for Xilinx Systems with XPT2046 support on a MicroBlaze softcore.",
-    tags: [
-      "FPGA",
-      "Verilog",
-      "C",
-      "ARTY S7-25",
-      "UART",
-      "Vivado",
-      "Vitis",
-      "MicroBlaze",
-    ],
-    href: "https://github.com/ahnafzareef/ILI9341Driver",
-    img: "/projects/ili9341demoimage.jpg",
-    imgClassName: "object-cover object-center group-hover:scale-[1.04]",
-  },
-  {
     title: "Hardware Accelerator",
     description:
       "Binarized Neural Network accelerator on an Arty S7-25T FPGA.",
@@ -52,6 +34,24 @@ const PROJECTS: Project[] = [
     ],
     href: "https://github.com/ahnafzareef/Hardware-Accelerator",
     img: "/projects/hwaccel.png",
+  },
+  {
+    title: "LCD FPGA Driver",
+    description:
+      "ILI9341 LCD driver for Xilinx Systems with XPT2046 support on a MicroBlaze softcore.",
+    tags: [
+      "FPGA",
+      "Verilog",
+      "C",
+      "ARTY S7-25",
+      "UART",
+      "Vivado",
+      "Vitis",
+      "MicroBlaze",
+    ],
+    href: "https://github.com/ahnafzareef/ILI9341Driver",
+    img: "/projects/ili9341demoimage.jpg",
+    imgClassName: "object-cover object-center group-hover:scale-[1.04]",
   },
   {
     title: "I2C Master Controller",
