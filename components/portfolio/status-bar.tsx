@@ -33,7 +33,7 @@ export function StatusBar() {
         <div className="flex items-center gap-4 text-[10px] font-medium lowercase tracking-[0.18em] text-foreground/35">
           <span className="hidden items-center gap-1.5 md:inline-flex">
             <span className="h-1 w-1 bg-accent blink" />
-            open to internships · 2026
+            open to internships · 2026-2027
           </span>
           <span className="tabular-nums">{time || "--:--:--"}</span>
         </div>

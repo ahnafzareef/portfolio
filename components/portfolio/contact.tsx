@@ -43,7 +43,7 @@ export function Contact() {
             </a>
             <span className="flex items-center gap-1.5 text-foreground/50">
               <span className="h-1.5 w-1.5 bg-accent blink" />
-              open to internships · 2026
+              open to internships · 2026-2027
             </span>
           </div>
         </div>
